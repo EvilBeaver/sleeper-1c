@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
-project(SampleAddIn)
+project(Sleeper)
 
 set(CMAKE_CXX_STANDARD 17)
-set(TARGET SampleAddIn)
+set(TARGET Sleeper)
 
-option(CASE_INSENSITIVE "Case insensitive method names" OFF)
-option(STATIC_CRT "Static CRT linkage" OFF)
+option(CASE_INSENSITIVE "Case insensitive method names" ON)
+option(STATIC_CRT "Static CRT linkage" ON)
 option(OUT_PARAMS "Support output parameters" OFF)
 
 list(APPEND SOURCES

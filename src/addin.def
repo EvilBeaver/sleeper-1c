@@ -1,4 +1,4 @@
-LIBRARY "SampleAddIn"
+LIBRARY "Sleeper"
 
 EXPORTS
 GetClassObject

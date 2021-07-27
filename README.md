@@ -1,12 +1,25 @@
-![Desktop CI](https://github.com/Infactum/addin-template/workflows/Desktop%20CI/badge.svg)
-![Mobile CI](https://github.com/Infactum/addin-template/workflows/Mobile%20CI/badge.svg)
+![Desktop CI](https://github.com/EvilBeaver/sleeper-1c/workflows/Desktop%20CI/badge.svg)
+![Mobile CI](https://github.com/EvilBeaver/sleeper-1c/workflows/Mobile%20CI/badge.svg)
 
-# Modern Native AddIn
+# Та самая Пауза в платформе 1С:Предприятие 8
 
-Custom implementation of Native AddIn template for 1C:Enterpise platform on modern C++.    
-See more info about AddIn development [here](https://support.1ci.com/hc/en-us/sections/360001651174-Add-in-Development-Technology).
+Внешняя компонента для метода Пауза в платформе 1С:Предприятие 8.
+Решение целиком и полностью основано на плагине от @Infactum и, по-сути, является им же (просто удалены ненужные методы).
+
+## Использование
+
+```bsl
+ПодключитьВнешнююКомпоненту("ОбщийМакет.Sleeper", "Sleeper", ТипВнешнейКомпоненты.Native);
+Паузятор = Новый("AddIn.Sleeper.Sleep");
+Паузятор.Приостановить(3000);
+// english version
+Sleeper = Паузятор;
+Sleeper.Sleep(3000);
+```
 
 ## Supported platforms
+
+*Infactum says it's true, then it's true*
 
 ✔ Windows  
 ✔ Linux  
